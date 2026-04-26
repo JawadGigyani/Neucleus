@@ -1,0 +1,57 @@
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+backend/venv/
+venv/
+.venv/
+
+# Environment variables (secrets)
+backend/.env
+.env
+.env.local
+.env.*.local
+
+# SQLite database (runtime-generated)
+backend/db/*.db
+
+# Test output
+backend/tests/output_diagnostics.json
+
+# ── Node / Next.js ──
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# ── IDE / Editor ──
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Cursor ──
+.cursor/
+.cursorignore
+.cursorindexingignore
+
+# ── Planning / Internal Docs ──
+Implementation_Plan.md
+DESIGN.md
+*.plan.md
+agent-transcripts/
+
+# ── OS ──
+*.log
+*.tmp
+*.bak
