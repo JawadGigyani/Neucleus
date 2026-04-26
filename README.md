@@ -13,8 +13,12 @@
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID">
-    <img src="https://img.shields.io/badge/▶_Watch_Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Demo" />
+  <a href="https://youtu.be/2Vt34CKw-TY">
+    <img src="https://img.shields.io/badge/▶_Demo_Video-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch demo video" />
+  </a>
+  &nbsp;
+  <a href="https://youtu.be/oLM45nOSQUU">
+    <img src="https://img.shields.io/badge/▶_Technical_Walkthrough-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch technical walkthrough" />
   </a>
 </p>
 
