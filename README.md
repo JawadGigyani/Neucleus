@@ -305,6 +305,29 @@ Neucleus/
 | `GET` | `/api/result/{job_id}` | Retrieve the completed experiment plan |
 | `POST` | `/api/feedback` | Submit scientist review and corrections |
 
+## Deployment
+
+### Backend — DigitalOcean App Platform
+
+1. Create a new app on [DigitalOcean App Platform](https://cloud.digitalocean.com/apps)
+2. Connect your GitHub repo and set the **Source Directory** to `backend`
+3. DigitalOcean will auto-detect the `Dockerfile`
+4. Add these **environment variables** in the app settings:
+   - `FEATHERLESS_API_KEY` — your Featherless.ai key
+   - `TAVILY_API_KEY` — your Tavily key
+   - `ALLOWED_ORIGINS` — your Vercel frontend URL (e.g. `https://neucleus.vercel.app`)
+5. Deploy — the API will be available at `https://your-app.ondigitalocean.app`
+
+### Frontend — Vercel
+
+1. Import the repo on [Vercel](https://vercel.com/new)
+2. Set the **Root Directory** to `frontend`
+3. Add this **environment variable**:
+   - `NEXT_PUBLIC_API_URL` — your DigitalOcean backend URL (e.g. `https://your-app.ondigitalocean.app`)
+4. Deploy — Vercel will auto-detect Next.js and build
+
+> **Important:** After both are deployed, update the backend's `ALLOWED_ORIGINS` with your actual Vercel URL, and update Vercel's `NEXT_PUBLIC_API_URL` with your actual DigitalOcean URL.
+
 ## License
 
 This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
